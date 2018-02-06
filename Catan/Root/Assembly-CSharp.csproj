@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{69FFCBE9-8FB8-590F-D275-7312BE51FBE8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Board.cs" />
+     <Compile Include="Assets\Scripts\Card.cs" />
+     <Compile Include="Assets\Scripts\Chat.cs" />
+     <Compile Include="Assets\Scripts\Common\NotificationCenter\NotificationCenter.cs" />
+     <Compile Include="Assets\Scripts\Common\NotificationCenter\NotificationExtensions.cs" />
+     <Compile Include="Assets\Scripts\Common\Pooling\GameObjectPoolController.cs" />
+     <Compile Include="Assets\Scripts\Common\Pooling\PoolData.cs" />
+     <Compile Include="Assets\Scripts\Common\Pooling\Poolable.cs" />
+     <Compile Include="Assets\Scripts\Common\Pooling\Poolers\BasePooler.cs" />
+     <Compile Include="Assets\Scripts\Common\Pooling\Poolers\IndexedPooler.cs" />
+     <Compile Include="Assets\Scripts\Common\Pooling\Poolers\IntKeyedPooler.cs" />
+     <Compile Include="Assets\Scripts\Common\Pooling\Poolers\KeyedPooler.cs" />
+     <Compile Include="Assets\Scripts\Common\Pooling\Poolers\SetPooler.cs" />
+     <Compile Include="Assets\Scripts\Common\Pooling\Poolers\StringKeyedPooler.cs" />
+     <Compile Include="Assets\Scripts\Common\StateMachine\State.cs" />
+     <Compile Include="Assets\Scripts\Common\StateMachine\StateMachine.cs" />
+     <Compile Include="Assets\Scripts\Debug\DebugConsole.cs" />
+     <Compile Include="Assets\Scripts\Edge.cs" />
+     <Compile Include="Assets\Scripts\GUI\SampleScriptButton.cs" />
+     <Compile Include="Assets\Scripts\GUI\ShopScrollList.cs" />
+     <Compile Include="Assets\Scripts\GUI\SimpleObjectPool.cs" />
+     <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\GameStates\ActiveGameState.cs" />
+     <Compile Include="Assets\Scripts\GameStates\BaseGameState.cs" />
+     <Compile Include="Assets\Scripts\GameStates\InitializeGameState.cs" />
+     <Compile Include="Assets\Scripts\GameStates\PassiveGameState.cs" />
+     <Compile Include="Assets\Scripts\GameStates\PreGameState.cs" />
+     <Compile Include="Assets\Scripts\GameStates\SetupOneActiveGameState.cs" />
+     <Compile Include="Assets\Scripts\GameStates\SetupOnePassiveGameState.cs" />
+     <Compile Include="Assets\Scripts\GameStates\SetupTwoActiveGameState.cs" />
+     <Compile Include="Assets\Scripts\GameStates\SetupTwoPassiveGameState.cs" />
+     <Compile Include="Assets\Scripts\Interactables\Interactable.cs" />
+     <Compile Include="Assets\Scripts\Interactables\MainRoadInteractable.cs" />
+     <Compile Include="Assets\Scripts\Interactables\MainSettlementInteractable.cs" />
+     <Compile Include="Assets\Scripts\Interactables\SetupOneRoadInteractable.cs" />
+     <Compile Include="Assets\Scripts\Interactables\SetupOneSettlementInteractable.cs" />
+     <Compile Include="Assets\Scripts\Interactables\SetupTwoRoadInteractable.cs" />
+     <Compile Include="Assets\Scripts\Interactables\SetupTwoSettlementInteractable.cs" />
+     <Compile Include="Assets\Scripts\Interactables\UpgradeInteractable.cs" />
+     <Compile Include="Assets\Scripts\Intersection.cs" />
+     <Compile Include="Assets\Scripts\MaritimeTrade.cs" />
+     <Compile Include="Assets\Scripts\Networking\CatanNetworkHUD.cs" />
+     <Compile Include="Assets\Scripts\Networking\CatanNetworkManager.cs" />
+     <Compile Include="Assets\Scripts\Pieces\EdgePiece.cs" />
+     <Compile Include="Assets\Scripts\Pieces\HexPiece.cs" />
+     <Compile Include="Assets\Scripts\Pieces\IntersectionPiece.cs" />
+     <Compile Include="Assets\Scripts\Pieces\Piece.cs" />
+     <Compile Include="Assets\Scripts\Pieces\Road.cs" />
+     <Compile Include="Assets\Scripts\Pieces\Town.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\TerrainHex.cs" />
+     <Compile Include="Assets\Scripts\Tuple\Tuple.cs" />
+     <Compile Include="Assets\Scripts\Tuple\Tuple2.cs" />
+     <Compile Include="Assets\Scripts\Tuple\Tuple3.cs" />
+     <Compile Include="Assets\Scripts\Tuple\Tuple4.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\AStarPathfinding.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\BreadthFirstSearch.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\Buff.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\Cell.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CellGrid.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CellGridState.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CellGridStateAiTurn.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CellGridStateGameOver.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CellGridStateTurnChanging.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CellGridStateUnitSelected.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CellGridStateWaitingForInput.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CustomObstacleGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\CustomUnitGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\DijkstraPathfinding.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\EquilateralHexGridGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\GreedyBestFirstSearch.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\HeapPriorityQueue.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\Hexagon.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\HexagonalHexGridGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\HumanPlayer.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\ICellGridGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\IGraphNode.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\IPathfinding.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\IPriorityQueue.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\IUnitGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\ListPriorityQueue.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\NaiveAiPlayer.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\Player.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\RandomUnitGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\RectangularHexGridGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\RectangularSquareGridGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\Square.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\TriangularHexGridGenerator.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\Unit.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\UnitState.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\UnitStateMarkedAsFinished.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\UnitStateMarkedAsFriendly.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\UnitStateMarkedAsReachableEnemy.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\UnitStateMarkedAsSelected.cs" />
+     <Compile Include="Assets\TBS Framework\Scripts\Core\UnitStateNormal.cs" />
+     <None Include="Assets\read me.txt" />
+     <None Include="Assets\TBS Framework\ReleaseNotes.txt" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
